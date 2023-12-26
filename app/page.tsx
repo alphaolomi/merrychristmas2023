@@ -1,8 +1,9 @@
+'use client'
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { CardHeader, CardContent, Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { TreesIcon } from "./TreesIcon"
+import ConfettiComponent from "./ConfettiComponent"
 
 export default function IndexPage() {
   return (
@@ -31,12 +32,14 @@ export default function IndexPage() {
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-red-600 text-white text-center">
           <div className="container px-4 md:px-6">
             <h1 className="text-4xl md:text-6xl font-bold mb-4"> 🎄 Merry Christmas
-              <span className="text-4xl md:text-6xl font-bold mb-4"> & </span>
+              <span className="text-4xl md:text-6xl font-bold mb-4"> & <br /></span>
               🎉 Happy New Year</h1>
             <p className="text-lg md:text-xl max-w-prose mx-auto">
               Have a wonderful Christmas and a Happy New Year! May your Christmas sparkle with moments of love, laughter and goodwill, And may the year ahead be full of contentment and joy.
             </p>
-            <Button className="mt-4 bg-white text-red-600 mx-auto">👋 Wave hello</Button>
+            {/* Wave Button */}
+            <ConfettiComponent />
+            {/* end wave button */}
           </div>
         </section>
         {/* <section className="w-full py-12 md:py-24 lg:py-32">
