@@ -1,3 +1,8 @@
+# 🎄 Merry Christmas and a Happy New year 2024 
+
+[![Intergration Tests](https://github.com/alphaolomi/nextjs-christmas/actions/workflows/node.js.yml/badge.svg)](https://github.com/alphaolomi/nextjs-christmas/actions/workflows/node.js.yml) 
+![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=merrychristmas2023)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
