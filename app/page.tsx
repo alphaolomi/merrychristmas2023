@@ -2,10 +2,11 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CardHeader, CardContent, Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { TreesIcon } from "./TreesIcon"
 
 export default function IndexPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-red-50">
+    <div className="flex flex-col min-h-screen bg-red-50" data-testid="page">
       <header className="px-4 lg:px-6 h-16 flex items-center bg-red-600 text-white">
         <Link className="flex items-center justify-center" href="#">
           <TreesIcon className="h-6 w-6" />
@@ -86,27 +87,5 @@ export default function IndexPage() {
         </nav>
       </footer>
     </div>
-  )
-}
-
-function TreesIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M10 10v.2A3 3 0 0 1 8.9 16v0H5v0h0a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z" />
-      <path d="M7 16v6" />
-      <path d="M13 19v3" />
-      <path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5" />
-    </svg>
   )
 }
