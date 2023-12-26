@@ -89,7 +89,7 @@ export default function IndexPage() {
   )
 }
 
-function TreesIcon(props) {
+function TreesIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
